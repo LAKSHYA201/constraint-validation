@@ -1,0 +1,43 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+#hero {
+  height: 200px;
+  background-image: linear-gradient(red, blue);
+  color: white;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message {
+  margin-top: 30px;
+  font-size: larger;
+}
+.label,
+.field {
+  margin-top: 25px;
+}
+#mail:invalid,
+#country:invalid,
+#zip:invalid,
+#pass:invalid,
+#c_pass:invalid {
+  border: solid 1px red;
+}
+#mail:valid,
+#country:valid,
+#zip:valid,
+#pass:valid,
+#c_pass:valid {
+  border: solid 2px green;
+}
+
+.btn {
+  margin-top: 25px;
+  height: 40px;
+  width: 100px;
+  background-image: linear-gradient(red, blue);
+  color: white;
+  font-size: larger;
+}

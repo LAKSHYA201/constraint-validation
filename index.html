@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="hero"><h1>Form</h1></div>
+    <div>
+      <form novalidate>
+        <label for="email" class="label">Email : </label>
+        <input
+          class="field"
+          type="email"
+          name="mail"
+          id="mail"
+          required
+        /><br />
+        <label for="country" class="label">Country : </label>
+        <input
+          class="field"
+          type="text"
+          name="country"
+          id="country"
+          pattern="^[a-zA-Z ]*$"
+          required
+        /><br />
+        <label for="zip" class="label">Zip Code :</label>
+        <input
+          class="field"
+          type="text"
+          name="zip"
+          id="zip"
+          required
+          pattern="[0-9]{6}"
+          maxlength="6"
+        /><br />
+        <label for="pass" class="label">Password :</label>
+        <input
+          class="field"
+          type="password"
+          name="pass"
+          id="pass"
+          minlength="6"
+          maxlength="15"
+          required
+        /><br />
+        <label for="c_pass" class="label">Confirm Password : </label>
+        <input
+          class="field"
+          type="password"
+          name="c_pass"
+          id="c_pass"
+          minlength="6"
+          maxlength="15"
+          required
+        /><br />
+      </form>
+      <button class="btn">Submit</button>
+      <div class="message"></div>
+    </div>
+  </body>
+</html>
